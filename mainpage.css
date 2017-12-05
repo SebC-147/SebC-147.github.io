@@ -24,6 +24,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 0 25px 0; 
 }
 
 #showcase div{
@@ -68,7 +69,7 @@ body{
 #showcase .nabo-venstre .content{
     background: url("nabo-venstre.png");
     background-size: cover;
-    align-content: center;
+    align-content: auto;
     
 }
 #showcase .nabo-høyre .content{
@@ -76,6 +77,13 @@ body{
     background-size: cover;
     align-content: center;
     
+}
+#footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    bottom: 0;
 }
 
 

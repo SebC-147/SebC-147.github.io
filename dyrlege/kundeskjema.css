@@ -1,0 +1,23 @@
+:root{
+    --fyll:10px;
+}
+
+header{
+    color: #245ADA;
+    font-size: 1.2em;
+    padding: var(--fyll);
+    padding-bottom: 20px;
+}
+article{
+    font-size: 1.1em;
+    padding: var(--fyll);
+}
+article{
+    width: 90vw;
+    height: 50vh;
+    border: 2px solid #DA082E;
+    background-color: whitesmoke;
+}
+li:nth-child(2n){
+ color: #245ADA;
+}
