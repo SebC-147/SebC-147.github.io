@@ -1,0 +1,126 @@
+#sonic{
+position: absolute;
+left: 20vw;
+top: 50vh;
+width: 90px;
+height:45px;
+background-image: url("sonic-car.png"); 
+background-position-x: 0;
+background-position-y: 0;
+transform: scaleX(-1);
+z-index: -1;
+}
+
+#sonic{
+animation: forward 3s alternate forwards, 
+lift 5s 3s forwards,
+gone 2ms 12s forwards
+}
+
+@keyframes forward{
+    0%{left: 20vw; top: 50vh;}
+    100%{left: 70vw; top: 50vh;}
+}
+
+@keyframes lift {
+    0%{left: 70vw; top: 50vh;}
+    100%{left: 70vw; top: 40vh;}
+}
+
+@keyframes gone {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+#sonic2{
+    position: absolute;
+    left: 1000vw;
+    top: 40vh;
+    width: 90px;
+    height:45px;
+    background-image: url("sonic-car.png"); 
+    background-position-x: 0;
+    background-position-y: 0;
+    z-index: -1;
+}
+
+#sonic2{
+    animation: liftdown 5s 12s forwards,
+    forward2 3s 17s alternate forwards
+}
+
+@keyframes liftdown {
+    0%{left: 70vw; top: 40vh;}
+    100%{left: 70vw; top: 50vh;}
+}
+
+@keyframes forward2{
+    0%{left: 70vw; top: 50vh;}
+    100%{left: 20vw; top: 50vh;}
+}
+
+#garage #lift{
+    position: absolute;
+    top: calc(50vh + 42px);
+    left: 70vw;
+    background-color: gray;
+    width: 100px;
+    height: 14px;
+}
+
+#garage #lift{
+    animation: lift2 5s 3s forwards,
+    liftdown2 5s 12s forwards
+}
+
+@keyframes lift2 {
+    0%{left: 70vw; top: calc(50vh + 42px);}
+    100%{left: 70vw; top: calc(40vh + 42px);}
+}
+
+@keyframes liftdown2 {
+    0%{left: 70vw; top: calc(40vh + 42px);}
+    100%{left: 70vw; top: calc(50vh + 42px);}
+}
+
+#garage #leftcolum{
+    position: absolute;
+    top: calc(35vh + 42px + 15px);
+    left: calc(70vw - 20px);
+    background-color: red;
+    width: 20px;
+    height: 15vh;
+}
+
+#garage #rightcolum{
+    position: absolute;
+    top: calc(35vh + 42px + 15px);
+    left: calc(70vw + 100px);
+    background-color: red;
+    width: 20px;
+    height: 15vh;
+}
+
+#garage #gate{
+    position: absolute;
+    top: calc(15vh + 42px + 15px);
+    left: calc(70vw - 20px);
+    background-color: blue;
+    width: 140px;
+    height: 20vh;
+}
+
+#garage #gate{
+    animation:gate 5s 3s forwards,
+    gate2 5s 12s forwards
+}
+
+@keyframes gate {
+    0%{left: calc(70vw - 20px); top: calc(15vh + 42px + 15px);}
+    100%{left: calc(70vw - 20px); top: calc(30vh + 42px + 15px);}
+}
+
+@keyframes gate2 {
+    0%{left: calc(70vw - 20px); top: calc(30vh + 42px + 15px);}
+    100%{left: calc(70vw - 20px); top: calc(15vh + 42px + 15px);}
+}

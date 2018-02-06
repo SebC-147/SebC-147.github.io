@@ -1,0 +1,42 @@
+#body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+#avatar{
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    height: 100vh;
+    width: calc(100vw - 2em);
+    padding: 1em;
+}
+    
+#avatar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+    
+.item{
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 30vh;
+    background-color: grey;
+    padding-top: 2em;
+}
+
+.item:nth-child(2n + 1){
+    background-color: lightgray;
+}
+
+#header h1{
+position: absolute;
+left: 0;
+top: 0;
+text-align: center;
+color: red;
+font-size: 50px;
+height: 15vh;
+width: 100vw;
+}

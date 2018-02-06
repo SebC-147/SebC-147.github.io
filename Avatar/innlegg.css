@@ -1,0 +1,38 @@
+#body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#forum{
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    height: 85vh;
+    width: calc(100vw - 2em);
+    padding: 1em;
+    text-align: center;
+}
+
+#forum{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.item{
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 85vh;
+    background-color: lightskyblue;
+    padding-top: 0.5em;
+}
+
+.item:nth-child(2n + 1){
+    background-color: lightblue;
+}
