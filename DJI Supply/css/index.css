@@ -1,0 +1,54 @@
+html, body{
+    font: 15px/1.5 Arial, Helvetica, Sans-Serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 100vw;
+    background-color: blue;
+}
+
+#slider{
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    height: 60vh;
+    width: 100vw;
+    background-color: ;
+}
+
+/*header #branding{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    position: relative;
+    top: 0;
+}
+*/
+header nav{
+    float:right;
+}
+
+header nav li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    font-size: 1.8em;
+    text-decoration-line: none;
+}
+
+#branding a:nth-child(2){
+    padding-bottom: 20px;
+}

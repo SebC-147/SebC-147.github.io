@@ -1,0 +1,96 @@
+#brett{
+    position: absolute;
+    height: calc(50px * 8);
+    width: calc(50px * 8);
+    border: grey 1em solid;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.brikke{
+    width: calc(50px);
+    height: calc(50px); 
+}
+
+.brikke:nth-child(2n + 1){
+    background-color: white;
+}
+
+.brikke:nth-child(2n + 9){
+    background-color: black;
+}
+
+.brikke:nth-child(2n + 10){
+    background-color: white;
+}
+
+.brikke:nth-child(2n + 17){
+    background-color: white;
+}
+
+.brikke:nth-child(2n + 18){
+    background-color: black;
+}
+
+.brikke:nth-child(2n + 25){
+    background-color: black;
+}
+
+.brikke:nth-child(2n + 26){
+    background-color: white;
+}
+
+.brikke:nth-child(2n + 33){
+    background-color: white;
+}
+
+.brikke:nth-child(2n + 34){
+    background-color: black;
+}
+
+.brikke:nth-child(2n + 41){
+    background-color: black;
+}
+
+.brikke:nth-child(2n + 42){
+    background-color: white;
+}
+
+.brikke:nth-child(2n + 49){
+    background-color: white;
+}
+
+.brikke:nth-child(2n + 50){
+    background-color: black;
+}
+
+.brikke:nth-child(2n + 57){
+    background-color: black;
+}
+
+.brikke:nth-child(2n + 58){
+    background-color: white;
+}
+
+.bonde1{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: burlywood;
+    position: relative;
+    left: calc((50px - 35px) / 2);
+    top: calc((50px - 35px) / 2);
+    box-shadow: 2px 2px 2px grey;
+}
+
+.bonde{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: brown;
+    position: relative;
+    left: calc((50px - 35px) / 2);
+    top: calc((50px - 35px) / 2);
+    box-shadow: 2px 2px 2px grey;
+}

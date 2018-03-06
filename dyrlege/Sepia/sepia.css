@@ -1,0 +1,55 @@
+#bilder{
+    display: flex;
+}
+
+.bilde{
+    background-size: contain;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    filter: grayscale(75%);
+    flex: 1;
+    transition: 2s;
+}
+
+.bilde:hover{
+    filter: grayscale(0);
+    flex: 4;
+}
+
+div.bilde:nth-child(1){
+    background-image: url("bilder/norge0.jpg");
+}
+div.bilde:nth-child(2){
+    background-image: url("bilder/norge1.jpg");
+}
+div.bilde:nth-child(3){
+    background-image: url("bilder/norge2.jpg");
+}
+div.bilde:nth-child(4){
+    background-image: url("bilder/norge3.jpg");
+}
+div.bilde:nth-child(5){
+    background-image: url("bilder/norge4.jpg");
+}
+div.bilde:nth-child(6){
+    background-image: url("bilder/norge5.jpg");
+}
+div.bilde:nth-child(7){
+    background-image: url("bilder/norge6.jpg");
+}
+div.bilde:nth-child(8){
+    background-image: url("bilder/norge7.jpg");
+}
+div.bilde:nth-child(9){
+    background-image: url("bilder/norge8.jpg");
+}
+div.bilde:nth-child(10){
+    background-image: url("bilder/norge9.jpg");
+}
+div.bilde:nth-child(11){
+    background-image: url("bilder/norge10.jpg");
+}
+div.bilde:nth-child(12){
+    background-image: url("bilder/norge11.jpg");
+}

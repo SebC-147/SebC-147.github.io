@@ -8,7 +8,7 @@ function setup() {
         messagingSenderId: "337200762092"
       };
       firebase.initializeApp(config);
-      let divListe = document.getElementById("liste");
+      let divInnlegg = document.getElementById("innlegg");
       
     let ref = firebase.database().ref("innlegg");
       
@@ -19,7 +19,7 @@ function setup() {
         <div>
             <ul>
                 <li>${info.fornavn} :
-                <li>${info.beskrivelse}
+                <li>${info.melding}
             </ul>
         </div>
         `;
