@@ -1,0 +1,25 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    font: 15px/1.5 Arial, Helvetica, Sans-Serif;
+}
+
+#logo a{
+    position: absolute;
+    background-position-x: center;
+    left: calc(50vw - 110px);
+}
+
+#main{
+    position: absolute;
+    background-color: #336699;
+    top: 28vh;
+    width: 100vw;
+    height: 82vh;
+    border-top: solid 2px #666666;
+}
+
+#firebaseui-auth-container{
+    transform: translateY(15vh);
+}
+

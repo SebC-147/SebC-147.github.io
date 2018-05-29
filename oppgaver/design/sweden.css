@@ -1,0 +1,37 @@
+div{
+    height: 200px;
+    width: 320px;
+    background-color: blue;
+}
+.svensk::after{
+    content: "";
+    display: block;
+    transform: translateY(-300%);
+    height: 40px;
+    width: 320px;
+    z-index: 2;
+    background-color: yellow;
+}
+
+.svensk::before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 40px;
+    background-color: yellow;
+    transform: translateX(250%);
+}
+
+.btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}

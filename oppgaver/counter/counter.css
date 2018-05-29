@@ -1,0 +1,21 @@
+body {
+    counter-reset: oppgave;                     /* Set a counter named 'section', and it`s initial value is 0. */
+  }
+  
+  .oppgave{
+      counter-reset: deloppgave; 
+  }
+
+  .oppgave::before {
+    counter-increment: oppgave;                 /* Increment the value of section counter by 1 */
+    content: counter(oppgave);                  /* Display the value of section counter */
+  }
+
+  .oppgave > p::before {
+    counter-increment: deloppgave;                 /* Increment the value of section counter by 1 */
+    content: counter(deloppgave);                 /* Display the value of section counter */
+    
+  }
+
+
+  

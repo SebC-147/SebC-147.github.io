@@ -5,50 +5,414 @@ html, body{
 }
 
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20vh;
+    max-height: 20vh;
     width: 100vw;
-    background-color: blue;
-}
-
-#slider{
-    position: absolute;
-    top: 20vh;
-    left: 0;
-    height: 60vh;
-    width: 100vw;
-    background-color: ;
-}
-
-/*header #branding{
-    position: relative;
-    top: 0;
-    left: 0;
+    border-bottom: solid 10px  #336699;
 }
 
 header nav{
-    position: relative;
-    top: 0;
-}
-*/
-header nav{
-    float:right;
+    float: right;
+    margin-top: -6em;
+    margin-right: 8em;
+    max-height: 0px;
 }
 
 header nav li{
     display: inline;
     padding: 0 20px 0 20px;
+    overflow-wrap: none;
+}
+
+header nav li a{
+    text-decoration-line: none;
+    color: #336699;
+    text-transform: uppercase;
+}
+
+header nav li:nth-child(4) svg{
+    height: 30px;
+    width: 30px;
+}
+
+header nav li:hover:nth-child(1){
+    font-weight: bold;
+}
+
+header nav li:hover:nth-child(2){
+    font-weight: bold;
+    padding: 0 19px 0 19px;
+}
+
+header nav li:hover:nth-child(3){
+    font-weight: bold;
+    padding: 0 20px 0 19px;
+}
+
+header nav li .checkout > *{
+    background-color: #336699;
+    border-radius: 50%;
+    padding: 5px;
+    margin: -8px;
+}
+
+header nav li .checkout .svg-icon{
+    -webkit-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    transform: translateY(10%);
+}
+
+header nav li .checkout .svg-icon path{
+    fill: #eeeeee;
+}
+
+header nav li .search-box{
+    transform: translateX(-50%,-50%);
+    background-color: #336699;
+    height: 30px;
+    border-radius: 40px;
+    /*padding: 10px;*/
+    transition: 0.4s;
+    width: 30px;
+    float: right;
+}
+
+header nav li .search-btn{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #336699;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    transition: 0.4s;
+    margin-top: -5px;
+}
+
+header nav li .search-btn svg{
+    height: 25px;
+    width: 25px;
+    margin-top: 7px;
+}
+
+header nav li .search-btn .svg-icon path{
+    fill: #eeeeee;
+    transition: 0.4;
+}
+
+header nav li .search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s; 
+    line-height: 30px;
+    width: 0px;
+}
+
+header nav li .search-box:hover > .search-txt{
+    width: 220px;
+    padding: 0 6px; 
+}
+
+header nav li .search-box:hover > .search-btn{
+    background-color: #eeeeee;
+    box-shadow: 2px 2px 2px #666666;
+}
+
+header nav li .search-box:hover > .search-btn .svg-icon path{
+fill: #1f1f1f;
+}
+
+header nav li .search-box:hover{
+    width: 275px;
+    /*padding: 10px;*/
 }
 
 header #branding li{
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 30px 0 30px;
     font-size: 1.8em;
     text-decoration-line: none;
+    padding: 0;
 }
 
-#branding a:nth-child(2){
-    padding-bottom: 20px;
+header #branding li:nth-child(2){
+    position: relative;
+    top: -1.7em;
 }
+
+#branding li a{
+    text-decoration-line: none;
+    color: #666666;
+}
+
+#branding ul{
+    padding: 0;
+    margin: 0;
+}
+
+#slider{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    position: absolute;
+    border-bottom: 10px solid #336699;
+}
+
+#slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80vh;
+    background-color: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+#slider .slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(../bilder/D1.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+#slider .slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(../bilder/D2.png);
+    background-size: contain;
+    background-position: center;
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+#slider .slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(../bilder/D3.png);
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+#slider .slide:nth-child(4){
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(../bilder/D4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#slider .slide h1{
+    color: #336699;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-left: 3em;
+    position: relative;
+    bottom: -7em;
+}
+
+#slider .slide p{
+    color: #c0c0c0;
+    font-size: 1.2em;
+    position: relative;
+    margin-left: 7.8em;
+    bottom: -16em;
+}
+
+@keyframes slide{
+    0% {left: 100%; width: 100%;}
+    5% {left: 0%;}
+    25% {left: 0%;}
+    30% {left: -100%; width: 100%;}
+    30.00001% {left: -100%; width: 0%;}
+    100% {left: 0%; width: 0%;}
+}
+
+section{
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    display: block;
+    margin-bottom: 3em;
+}
+
+section h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2.5em;
+    color: #1f1f1f;
+    text-shadow: 1px 1px 1px rgba(5, 5, 5, 0.25);
+}
+
+section #featured{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5em;
+}
+
+section #featured .D{
+    height: 25em;
+    width: 30em; 
+    display: block;
+    margin-left: calc(25vw - 15em); 
+}
+
+section #featured .D .flipcard{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 75%;
+    border: 2px solid #336699;
+    box-shadow: #c0c0c0 3px 3px 3px;
+    border-radius: 2%;
+    background-color: #1f1f1f;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    perspective: 1000;
+}
+
+section #featured .D .flipcard:hover{
+    transform: rotateY(180deg);
+    background-color: transparent;
+    border: 2px solid #1f1f1f;
+}
+
+section #featured .D .flipcard .infoFront{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-size: contain;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+section #featured .D .flipcard .infoBack{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #336699;
+    text-align: center; 
+    color: #1f1f1f;
+}
+
+section #featured .D .flipcard .infoBack p{
+    line-height: 20px;
+    color: #eeeeee;
+    transform: translateY(60px);
+    padding: 10px;
+}
+
+section #featured .D .flipcard .infoBack input{
+    transform: translateY(50px);
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bold;
+}
+
+section #featured .D .buy{
+    position: relative;
+    left: 0;
+    min-height: 20%;
+    margin-top: 2em;
+    text-align: center;
+    
+}
+
+section #featured .D .buy button:active{
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 0.5px 0.5px 0.5px #666666;
+}
+
+section #featured .D .buy button{
+    background-color: #336699;
+    font-size: 1.5em;
+    color: #1f1f1f;
+    box-shadow: 2px 2px 2px #666666;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+section #featured .D:nth-child(1) .infoFront{
+    background-image: url(../bilder/D1.png);
+    background-size: 400px 400px;
+    background-position-y: -60px;
+    background-position-x: center
+}
+
+section #featured .D:nth-child(2) .infoFront{
+    background-image: url(../bilder/D2.png);
+    background-size: calc(1168px - 765px) calc(646px - 425px);
+    background-position-y: center;
+    background-position-x: center;
+}
+
+section #featured .D:nth-child(3) .infoFront{
+    background-image: url(../bilder/D3.png);
+    background-position-y: 30px;
+}
+
+section #featured .D:nth-child(4) .infoFront{
+    background-image: url(../bilder/D4.png);
+}
+
+footer{
+    position: absolute;
+    top: 260vh;
+    min-height: 15vh;
+    width: 100vw;
+    background-color: #1f1f1f;
+    border-top: 5px solid #666666;
+}
+
+#social{
+    margin-left: calc(50vw - 4.5em - 45px);
+    margin-top: 30px;
+}
+
+#social .svg-icon{
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+.svg-icon {
+    width: 3em;
+    height: 3em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #336699;
+  }
+  
+  .svg-icon circle {
+    stroke: #336699;
+    stroke-width: 1;
+  }
+
+  footer p{
+      color: #eeeeee;
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 15px
+  }
+
+  ::placeholder{
+      color: white;
+  }

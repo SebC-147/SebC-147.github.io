@@ -1,0 +1,322 @@
+html, body{
+    font: 15px/1.5 Arial, Helvetica, Sans-Serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    max-height: 20vh;
+    width: 100vw;
+    border-bottom: solid 10px  #336699;
+}
+
+header nav{
+    float: right;
+    margin-top: -6em;
+    margin-right: 8em;
+    max-height: 0px;
+}
+
+header nav li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    overflow-wrap: none;
+}
+
+header nav li a{
+    text-decoration-line: none;
+    color: #336699;
+    text-transform: uppercase;
+}
+
+header nav li:nth-child(4) svg{
+    height: 30px;
+    width: 30px;
+}
+
+header nav li:hover:nth-child(1){
+    font-weight: bold;
+}
+
+header nav li:hover:nth-child(2){
+    font-weight: bold;
+    padding: 0 19px 0 19px;
+}
+
+header nav li:hover:nth-child(3){
+    font-weight: bold;
+    padding: 0 20px 0 19px;
+}
+
+header nav li .checkout > *{
+    background-color: #336699;
+    border-radius: 50%;
+    padding: 5px;
+    margin: -8px;
+}
+
+header nav li .checkout .svg-icon{
+    -webkit-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    transform: translateY(10%);
+}
+
+header nav li .checkout .svg-icon path{
+    fill: #eeeeee;
+}
+
+header nav li .search-box{
+    transform: translateX(-50%,-50%);
+    background-color: #336699;
+    height: 30px;
+    border-radius: 40px;
+    /*padding: 10px;*/
+    transition: 0.4s;
+    width: 30px;
+    float: right;
+}
+
+header nav li .search-btn{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #336699;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    transition: 0.4s;
+    margin-top: -5px;
+}
+
+header nav li .search-btn svg{
+    height: 25px;
+    width: 25px;
+    margin-top: 7px;
+}
+
+header nav li .search-btn .svg-icon path{
+    fill: #eeeeee;
+    transition: 0.4;
+}
+
+header nav li .search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s; 
+    line-height: 30px;
+    width: 0px;
+}
+
+header nav li .search-box:hover > .search-txt{
+    width: 220px;
+    padding: 0 6px; 
+}
+
+header nav li .search-box:hover > .search-btn{
+    background-color: #eeeeee;
+    box-shadow: 2px 2px 2px #666666;
+}
+
+header nav li .search-box:hover > .search-btn .svg-icon path{
+    fill: #1f1f1f;
+}
+
+header nav li .search-box:hover{
+    width: 275px;
+    /*padding: 10px;*/
+}
+
+header #branding li{
+    display: inline;
+    padding: 0 30px 0 30px;
+    font-size: 1.8em;
+    text-decoration-line: none;
+    padding: 0;
+}
+
+header #branding li:nth-child(2){
+    position: relative;
+    top: -1.7em;
+}
+
+#branding li a{
+    text-decoration-line: none;
+    color: #666666;
+}
+
+#branding ul{
+    padding: 0;
+    margin: 0;
+}
+
+article #submit > ul{
+    position: absolute;
+    right: 29vw;
+    top: calc(20vh + 30px);
+    list-style-type: none;
+}
+
+article #submit input{
+    outline: none;
+    border: none;
+    border-bottom: solid #1f1f1f 1px;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+article h2{
+    position: absolute;
+    top: 22vh;
+    left: 14vw;
+    color: #1f1f1f;
+    z-index: -2;
+}
+
+article #list{
+    position: relative;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 40vw;
+    height: 75vh;
+    overflow: scroll;
+    border: 2px solid #666666;
+    border-radius: 10px;
+}
+
+article #list .info{
+    position: relative;
+    width: 100%;
+    background-color: #eeeeee;
+    z-index: -1;
+}
+
+article #list .info:nth-child(2n + 1){
+    background-color: #cccccc;
+}
+
+article #list .info div{
+    display: inline;
+}
+
+article #list div h3{
+    padding: 9px;
+    padding-left: 20px;
+    margin: 0;
+    max-inline-size: 100px;
+    margin-block-start: 300px;
+}
+
+article #list div input{
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    float: right;
+    transform: translateY(-30px);
+}
+
+.btn{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 165px;
+    left: 42vw;
+    background-color: #336699; 
+    border: none; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    padding-right: 19px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+    z-index: 3;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #1f1f1f;
+}
+
+#resultat {
+    position: relative;
+    float: right;
+    min-height: 40vh;
+    background-color: #336699;
+    width: 40vw;
+    transform: translateY(-43vh);
+    right: 13vh;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #666666;
+    color: white;
+}
+
+article #order{
+    background-color: #336699; 
+    border: none; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#order:hover{
+    background-color: #1f1f1f;
+}
+
+footer{
+    position: absolute;
+    top: 120vh;
+    min-height: 15vh;
+    width: 100vw;
+    background-color: #1f1f1f;
+    border-top: 5px solid #666666;
+}
+
+#social{
+    margin-left: calc(50vw - 4.5em - 45px);
+    margin-top: 30px;
+}
+
+#social .svg-icon{
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+.svg-icon {
+    width: 3em;
+    height: 3em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #336699;
+  }
+  
+  .svg-icon circle {
+    stroke: #336699;
+    stroke-width: 1;
+  }
+
+  footer p{
+      color: #eeeeee;
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 15px
+  }
+
+  header ::placeholder{
+    color: white;
+}

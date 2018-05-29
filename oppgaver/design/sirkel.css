@@ -1,0 +1,29 @@
+div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: #eeeeee;
+}
+
+div::after{
+    content: "";
+    width: 8px;
+    height: 80px;
+    background-color: red;
+    transform: rotate(45deg);
+    margin-left: 48px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+div::before{
+    content: "";
+    width: 8px;
+    height: 80px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin-left: 48px;
+    position: absolute;
+    margin-top: 10px;
+}

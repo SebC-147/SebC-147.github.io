@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DJI Supply</title>
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/checkout.css">
     <link rel="shortcut icon" type="img/png" href="../bilder/favicon.png">
+    <script src="../javascript/checkout.js"></script>
+    <script src="../javascript/buy.js"></script>
+    <script src="../javascript/search.js"></script>
+    <script src="../javascript/remove.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -34,13 +40,13 @@
                 </li>
                 <li>
                     <div class="search-box">
-                        <input class="search-txt" type="text" placeholder="Search...">
+                        <input class="search-txt" type="text" placeholder="Search..." id="find">
                         <a class="search-btn" href="#">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path fill="none" d="M19.129,18.164l-4.518-4.52c1.152-1.373,1.852-3.143,1.852-5.077c0-4.361-3.535-7.896-7.896-7.896
-                                                    c-4.361,0-7.896,3.535-7.896,7.896s3.535,7.896,7.896,7.896c1.934,0,3.705-0.698,5.078-1.853l4.52,4.519
-                                                    c0.266,0.268,0.699,0.268,0.965,0C19.396,18.863,19.396,18.431,19.129,18.164z M8.567,15.028c-3.568,0-6.461-2.893-6.461-6.461
-                                                    s2.893-6.461,6.461-6.461c3.568,0,6.46,2.893,6.46,6.461S12.135,15.028,8.567,15.028z"></path>
+                                                            c-4.361,0-7.896,3.535-7.896,7.896s3.535,7.896,7.896,7.896c1.934,0,3.705-0.698,5.078-1.853l4.52,4.519
+                                                            c0.266,0.268,0.699,0.268,0.965,0C19.396,18.863,19.396,18.431,19.129,18.164z M8.567,15.028c-3.568,0-6.461-2.893-6.461-6.461
+                                                            s2.893-6.461,6.461-6.461c3.568,0,6.46,2.893,6.46,6.461S12.135,15.028,8.567,15.028z"></path>
                             </svg>
                         </a>
                     </div>
@@ -48,30 +54,26 @@
             </ul>
         </nav>
     </header>
-    <div id="showcase">
+    <div id="cart">
         <article>
-            <h2>About us</h2>
-            <p>DJI Supply is an uncertified DJI™ retailer. We specialize in DJI´s commercial drones. We have a drone for everyone! Both beginners and experts can take joy in DJI´s fantastic craftmanship. DJI Supply is based in Haugesund, Norway and ship worldwide.</p>
-            <br>
-            <h2>DJI</h2>
-            <p>Creativity is at the heart of every dream. Every idea, every groundbreaking leap that changes our world starts with the vision of talented creators. At DJI, they give these creators the tools they need to bring their ideas to life.</p>
-            <p>DJI´s platforms empower them to capture images that were once out of reach. Our flying and camera stabilization systems redefine camera placement and motion. Amazing photos and video, treasured personal memories, and high-end professional imagery are captured every day, in every corner of the world using DJI products.</p>
-            <p>They do this through an unparalleled commitment to R&D, a culture of constant innovation and curiosity, and a focus on transforming complex technology into easy-to-use devices. Building on the ethos of “form follows function,” their products combine advanced technology with dynamic designs.</p>
-            <p>Headquartered in Shenzhen, widely considered China’s Silicon Valley, DJI benefits from direct access to the suppliers, raw materials, and young, creative talent pool necessary for sustained success. Drawing on these resources, they have grown from a single small office in 2006 to a global workforce. Their offices can now be found in the United States, Germany, the Netherlands, Japan, South Korea, Beijing, Shanghai, and Hong Kong. As a privately owned and operated company, DJI focuses on our own vision, supporting creative, commercial, and nonprofit applications of our technology. Today, DJI products are redefining industries. Professionals in filmmaking, agriculture, conservation, search and rescue, energy infrastructure, and more trust DJI to bring new perspectives to their work and help them accomplish feats safer, faster, and with greater efficiency than ever before.</p>
-            <br>
-            <h2>Terms & Services</h2>
-            <p>DJI Supply takes NO responsibility for and will NOT replace any lost, broken or misplaced orders.</p>
-            <p>Since this site is a beta, errors and bugs may occur and orders can be wrongly processed. This also means the site is unprotected from cyberthreats such as hackers and we highly encourage our users to not give away any sensitive information (as long as you give us your credit card information of course).</p>
-            <p>When you order a product from DJI Supply you are legally entitled to pay the full costs of your product(s).</p>
-            <p>By ordering a product from DJI Supply you automatically agree with all the terms above and person(s) whom don´t follow these guidelines will be prosecuted to court.</p>
-            <br>
-            <h2>The page</h2>
-            <p>This webpage is built with semantic HTML.</p>
-            <p>SVG icons can be found in the searchbar and in the footer.</p>
-            <p>Animations can found in the searchbar, and our homepage which also functions as a photogallery.</p>
-            <p>Since the page is still a beta, every function may not always fully operate. The Search function is currently only working in the checkout area. Example of search key: DJI Mavic Pro.</p>
-            <p>The log in section is an integrated premade authentication UI from firebase.</p>
-            <p>Due to lack of Javascript knowledge the buy function is sadly not working...</p>
+            <div id="list" class="product"></div>
+            <h2>The cart is empty...</h2>
+            <div><button class="btn" id="delete"><i class="fa fa-close"></i></button></div>
+            <div id="submit">
+                <ul>
+                    <li>
+                        <input type="text" id="email" placeholder="Email" size="25">
+                    </li>
+                    <li>
+                        <input type="password" id="Password" size="25" placeholder="Password">   
+                    </li>
+                    <br>
+                    <li>
+                        <div id="submit"><input type="button" value="Order" id="order"></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="resultat">Search Result</div>
         </article>
     </div>
     <footer>
@@ -94,6 +96,12 @@
         </div>
         <p>Copyright &copy; 2018 DJI Supply All Rights Reserved</p>
     </footer>
+    <script>
+        setup();
+        buy();
+        search();
+        remove();
+    </script>
 </body>
 
 </html>

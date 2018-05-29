@@ -1,0 +1,26 @@
+html, body{
+    font: 15px/1.5 Arial, Helvetica, Sans-Serif;
+    padding: 0;
+    margin: 0;
+    background-color: #336699;
+}
+
+h1{
+    margin: 100px;
+    text-align: center;
+    color: #1f1f1f;
+    border-bottom: solid #1f1f1f 2px;
+}
+
+button{
+    position: absolute;
+    left: 47.5vw;
+    top: 40vh;
+    font-size: 1.1em;
+    background-color: #1f1f1f;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}

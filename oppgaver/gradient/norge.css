@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+#norge{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,transparent 27%, white 27%, white 31%, blue 31%, blue 39%, white 39%, white 43%, transparent 43%), linear-gradient(180deg,transparent 37.5%, white 37.5%, white 43.75%, blue 43.75%, blue 56.25%, white 56.25%, white 62.5%, transparent 62.5%)
+}
+
+#blue{
+    height: 12.5vh;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 43.75%;
+    z-index: 2;
+}
+

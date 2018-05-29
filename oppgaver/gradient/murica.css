@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#back{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, transparent, transparent 46.15%, blue 46.15%, blue 100%), repeating-linear-gradient(0deg,red, red 7.7%, white 7.7%, white 15.4%)
+                
+}

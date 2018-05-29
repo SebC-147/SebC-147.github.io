@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+header{
+    
+    height: 20vh;
+    width: 100%;
+    padding: 10px 10vw 0 10vw; 
+    background-color: #eeeeee;
+}
+
+article{
+    width: 80%;
+    margin-left: 10%;
+    background-image: url(../media/jau.jpeg);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+article h3{
+    position: relative;
+    top: 80%;
+    padding-left: 50px;
+    z-index: 1; 
+}
+
+.ad{
+    background-image: url(kfc.jpg);
+    min-height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80%;
+    margin-left: 10%;
+    opacity: 0.80;
+}
