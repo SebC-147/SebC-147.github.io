@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Goals</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDygMqchyUboJWvj54mJYLhqxy9ZsCO8G0",
+            authDomain: "goals-75325.firebaseapp.com",
+            databaseURL: "https://goals-75325.firebaseio.com",
+            projectId: "goals-75325",
+            storageBucket: "goals-75325.appspot.com",
+            messagingSenderId: "410841270392"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="../JS/login.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="logo"><img src="../Media/goals_logo.jpg" alt="" width="280" height="100px;"></div>
+        <div id="emailAndPass">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Password" id="pass">
+        </div>
+        <div id="loginAndSignup">
+            <button id="login">Log In</button>
+            <button id="signup">Sign Up</button>
+        </div>
+    </div>
+    <div id="message"></div>
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

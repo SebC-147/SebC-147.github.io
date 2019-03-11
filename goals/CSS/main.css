@@ -1,0 +1,122 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#containerGoals{
+    position: absolute;
+    top: 15vh;
+    height: 77.5vh;
+    width: 90vw;
+    left: 5vw;
+    background-color: rgb(48, 83, 144);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#containerGoals > div{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 85%;
+    top: 7.5%;
+    background-color: #1b1b1b;
+}
+
+.header{
+    color: white;
+    text-decoration-line: underline;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+#navShadow{
+    position: absolute;
+    height: 115vh;
+    width: 100vw;
+    top: -15vh;
+    background-color: gray;
+    opacity: 0.6;
+}
+
+#navBox{
+    position: relative;
+    height: 42.5vh;
+    top: 5vh;
+    width: 42vw;
+    left: 29vw;
+    background-color: white;
+}
+
+#navBox > #navList{
+    position: relative;
+    padding: 0;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    list-style: none;
+}
+
+#navBox > ul > li{
+    position: relative;
+    text-align: center;
+    background-color: rgb(48, 83, 144);
+    margin: 10px;
+    color: white;
+    padding: 20px;
+
+}
+
+#navBox > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+#navBox > ul > li:hover, #cross:hover{
+    background-color: #1b1b1b;
+}
+
+#cross{
+    position: relative;
+    left: calc(50% - 26px);
+    height: 52px;
+    width: 52px;
+    background-color: rgb(48, 83, 144);
+    border-radius: 50%;
+    top: 5%;
+    cursor: pointer
+}
+
+svg{
+    position: relative;
+    top: 8px;
+    left: 8px;
+    fill: white;
+}
+
+.edit{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
+}
+
+.edit:hover{
+    fill: rgb(48, 83, 144); 
+}
+
+.checklist{
+    position: relative;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+}
+
+.checklist > h3{
+    position: relative;
+    top: 30%;
+    text-align: center;
+    color: white;
+}
+

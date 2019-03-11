@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Goals</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDygMqchyUboJWvj54mJYLhqxy9ZsCO8G0",
+            authDomain: "goals-75325.firebaseapp.com",
+            databaseURL: "https://goals-75325.firebaseio.com",
+            projectId: "goals-75325",
+            storageBucket: "goals-75325.appspot.com",
+            messagingSenderId: "410841270392"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="../JS/homebar.js"></script>
+    <script src="../JS/main.js"></script>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+
+<body>
+    <div id="main">
+        <home-bar></home-bar>
+        <div id="containerGoals">
+            <div id="daily" class="goals">
+                <div class="header">Daily Goals</div>
+                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path
+                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z" />
+                    </svg></div>
+
+                <div class="checklist"></div>
+            </div>
+            <div id="weekly" class="goals">
+                <div class="header">Weekly Goals</div>
+                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path
+                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z" />
+                    </svg></div>
+
+                <div class="checklist">
+                    <h3>Coming Soon</h3>
+                </div>
+
+            </div>
+            <div id="monthly" class="goals">
+                <div class="header">Monthly Goals</div>
+                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path
+                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z" />
+                    </svg></div>
+
+                <div class="checklist">
+                    <h3>Coming Soon</h3>
+                </div>
+            </div>
+            <div id="yearly" class="goals">
+                <div class="header">Yearly Goals</div>
+                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path
+                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z" />
+                    </svg></div>
+
+                <div class="checklist">
+                    <h3>Coming Soon</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navContainer" hidden>
+        <div id="navShadow"></div>
+        <div id="navBox">
+            <ul id="navList">
+                <li><a href="https://jamesclear.com/ivy-lee">The Ivy Lee Method</a></li>
+                <li><a href="">My Account</a></li>
+                <li><a id="logout" href="../HTML/index.html">Log Out</a></li>
+            </ul>
+            <div id="cross">
+                <svg onclick="document.getElementById(`navContainer`).hidden = true" xmlns="http://www.w3.org/2000/svg"
+                    width="36" height="36" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
