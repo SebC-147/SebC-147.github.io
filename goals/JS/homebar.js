@@ -11,7 +11,7 @@ class HomeBar extends HTMLElement {
         this._root = this.attachShadow({ mode: "open" });
         this._root.innerHTML = `
         <div id="home">
-        <svg onclick="hide();" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          <svg onclick="hide();" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
           <a href="../HTML/main.html"><img src="../Media/goals_logo.jpg" width="140px" height="50px"></a>
           <div id="username">${username}</div>
         </div>

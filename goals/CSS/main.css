@@ -111,6 +111,7 @@ svg{
     width: 90%;
     height: 80%;
     left: 5%;
+    color: white;
 }
 
 .checklist > h3{
@@ -120,3 +121,25 @@ svg{
     color: white;
 }
 
+.editor{
+    position: relative;
+    bottom: 5%;
+    color: white;
+}
+
+#dailyList{
+    list-style: none;
+    padding: 0;
+}
+
+.list{
+    position: relative;
+    height: 5vh;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.list:hover{
+    text-decoration-line: line-through;
+    cursor: pointer; 
+}

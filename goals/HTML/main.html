@@ -26,22 +26,26 @@
 
 <body>
     <div id="main">
-        <home-bar></home-bar>
+        <home-bar id="bar"></home-bar>
         <div id="containerGoals">
             <div id="daily" class="goals">
                 <div class="header">Daily Goals</div>
-                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" viewBox="0 0 24 24">
+                <div class="icon" hidden="true"><svg class="edit" id="day" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0V0z" />
                         <path
                             d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z" />
                     </svg></div>
 
-                <div class="checklist"></div>
+                <div class="checklist" id="dailyCheck">
+                    <ul id="dailyList"></ul>
+                </div>
+                <div id="dayEditor" hidden="true" class="editor"><label for="daily">Set your daily goal: </label><input
+                        type="text" name="daily" id="dailyGoal"><button id="setDaily">Set Goal!</button></div>
             </div>
             <div id="weekly" class="goals">
                 <div class="header">Weekly Goals</div>
-                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
+                <div class="icon" hidden="true"><svg class="edit" id="week" xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0V0z" />
                         <path
@@ -50,12 +54,15 @@
 
                 <div class="checklist">
                     <h3>Coming Soon</h3>
+                </div>
+                <div id="weekEditor" hidden="true" class="editor"><label for="weekly">Set your weekly goal:
+                    </label><input type="text" name="weekly" id="weeklyGoal"><button id="setWeekly">Set Goal!</button>
                 </div>
 
             </div>
             <div id="monthly" class="goals">
                 <div class="header">Monthly Goals</div>
-                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
+                <div class="icon" hidden="true"><svg class="edit" id="month" xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0V0z" />
                         <path
@@ -65,10 +72,13 @@
                 <div class="checklist">
                     <h3>Coming Soon</h3>
                 </div>
+                <div id="monthEditor" hidden="true" class="editor"><label for="monthly">Set your monthly goal:
+                    </label><input type="text" name="monthly" id="monthlyGoal"><button id="setMonthly">Set
+                        Goal!</button></div>
             </div>
             <div id="yearly" class="goals">
                 <div class="header">Yearly Goals</div>
-                <div class="icon" hidden="true"><svg class="edit" hidden="true" xmlns="http://www.w3.org/2000/svg"
+                <div class="icon" hidden="true"><svg class="edit" id="year" xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0V0z" />
                         <path
@@ -77,6 +87,9 @@
 
                 <div class="checklist">
                     <h3>Coming Soon</h3>
+                </div>
+                <div id="yearEditor" hidden="true" class="editor"><label for="yearly">Set your yearly goal:
+                    </label><input type="text" name="yearly" id="yearlyGoal"><button id="setYearly">Set Goal!</button>
                 </div>
             </div>
         </div>
