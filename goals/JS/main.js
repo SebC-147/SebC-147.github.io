@@ -31,7 +31,10 @@ function setup() {
         docRef.get().then(function (doc) {
             dailyArray = doc.data().dailyGoals;
             updateGoals(dailyArray)
-        });
+        }).catch(function (error) {
+            console.log("No goals yet", error);
+            dailyArray = undefined;
+        })
     });
 
     //Viser edit knappen
@@ -71,7 +74,18 @@ function setup() {
     //Lager nye mål i daily
     btnDaily.addEventListener("click", e => {
         let goal = inpDaily.value;
-        let dailyLength = dailyArray.length
+        let dailyLength;
+        if (dailyArray === undefined) {
+            let newGoals = [goal];
+            var user = firebase.auth().currentUser.uid;
+            let firestore = firebase.firestore();
+            let docRef = firestore.collection("users").doc(`${user}`);
+            docRef.set({
+                dailyGoals: newGoals
+            });
+        } else {
+            dailyLength = dailyArray.length
+        }
         if (dailyLength >= 6) {
             console.log("For mange mål!")
         } else {
